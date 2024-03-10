@@ -6,3 +6,5 @@ Data/icon_data_sub.rds
 Data/iconicity_qual.csv
 Data/mturk.csv
 Iconicity.Rproj
+.DS_Store
+.gitattributes
