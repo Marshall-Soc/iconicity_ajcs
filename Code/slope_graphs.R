@@ -447,3 +447,28 @@ png("Figures/durability_meaning.png", height = 24, width = 24, units = "in", res
   durability.plot
 dev.off()
 
+
+# Just the full ranking ----------------------------------------------------
+
+full_ranking <- image.data.comb %>%
+  select(image_score_new, IMAGE_NUMBER) %>%
+  arrange(-image_score_new) %>%
+  add_column(images) %>%
+  rename(., image = .) %>%
+  mutate(order = 1:20) %>%
+  ggplot(aes(x = rev(as.factor(order)), y = image_score_new)) +
+  geom_image(y = -.05, aes(image = image), size = .04, by = "height") +
+  geom_col() +
+  labs(y = "Win Percentage", x = "") +
+  scale_y_continuous(labels = scales::percent) +
+  expand_limits(y = c(-.05, .9)) +
+  theme_bw() +
+  theme(axis.text.y = element_blank(),
+        axis.ticks.y = element_blank(),
+        axis.title.x = element_text(face = "bold")) +
+  coord_flip()
+
+png("Figures/full_ranking.png", height = 12, width = 12, units = "in", res = 750)
+  full_ranking
+dev.off()
+
