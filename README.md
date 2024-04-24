@@ -2,7 +2,7 @@
 
 [Terence E. McDonnell](https://sociology.nd.edu/people/terence-mcdonnell), [Marshall A. Taylor](https://www.marshalltaylor.net) & [Michael Lee Wood](https://www.michaelleewood.com/)
 
-This repository contains all R code necessary to reproduce the analysis in "Making Obama Iconic: Iconic Potential and the Affordances of Images," forthcoming in *American Journal of Cultural Sociology*.
+This repository contains all R code necessary to reproduce the analysis in "Making Obama Iconic: Iconic Potential and the Affordances of Images," [published in *American Journal of Cultural Sociology* (2024)](https://link.springer.com/article/10.1057/s41290-024-00210-2).
 
 Please contact [Terence E. McDonnell](mailto:terence.e.mcdonnell@nd.edu) for details on how to access the data.
 
